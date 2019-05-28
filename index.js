@@ -79,7 +79,7 @@ class Employer {
 
   meals () {
     let meals
-    results =  this.employees().map(function(employee) {
+    meals =  this.employees().map(function(employee) {
       return employee.meals()
     })
     let uniq_meals = Array.from(new Set(meals))
