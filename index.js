@@ -78,11 +78,12 @@ class Employer {
   }
 
   meals () {
-    let results
+    let meals
     results =  this.employees().map(function(employee) {
       return employee.meals()
     })
-    return results[0]
+    let uniq_meals = Array.from(new Set(meals))
+    return
   }
 }
 
