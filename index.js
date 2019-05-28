@@ -73,7 +73,6 @@ class Employer {
     return this.employees().map(function(employee) {
       return employee.deliveries()
     })
-    debugger
   }
 }
 
