@@ -115,9 +115,9 @@ class Customer {
 
   totalSpent () {
     let total = 0
-    let food = this.meals()
-    for (let i = 0; i < food.length; i++) {
-      total += food[i].price
+    let meals = this.meals()
+    for (let i = 0; i < meals.length; i++) {
+      total += meals[i].price
     }
     return total
   }
