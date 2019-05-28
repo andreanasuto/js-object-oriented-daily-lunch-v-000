@@ -70,9 +70,11 @@ class Employer {
   }
 
   deliveries() {
-    let results =  this.employees().map(function(employee) {
+    let results
+    results =  this.employees().map(function(employee) {
       return employee.deliveries()
     })
+    return results
   }
 }
 
