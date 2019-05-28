@@ -70,7 +70,7 @@ class Employer {
   }
 
   deliveries() {
-    return this.employees().map(function(employee) {
+    return this.employees().filter(function(employee) {
       return employee.deliveries()
     })
   }
