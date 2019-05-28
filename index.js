@@ -89,7 +89,6 @@ class Employer {
   mealTotals() {
     debugger
     return this.meals()
-
   }
 }
 
