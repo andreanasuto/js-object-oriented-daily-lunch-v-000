@@ -85,6 +85,10 @@ class Employer {
     let uniq_meals = Array.from(new Set(meals[0]))
     return uniq_meals
   }
+
+  mealTotals() {
+
+  }
 }
 
 class Customer {
@@ -111,9 +115,9 @@ class Customer {
 
   totalSpent () {
     let total = 0
-    let meals = this.meals()
+    let food = this.meals()
     for (let i = 0; i < meals.length; i++) {
-      total += meals[i].price
+      total += food[i].price
     }
     return total
   }
