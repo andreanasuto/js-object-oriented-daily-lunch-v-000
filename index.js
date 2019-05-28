@@ -87,8 +87,8 @@ class Employer {
   }
 
   mealTotals() {
-    const meals = this.deliveries().map(function (delivery) {
-      return delivery.meal()
+    const meals = this.employees().map(function(employee) {
+      return employee.meals()
     })
     let counts = {}
     debugger
