@@ -70,7 +70,7 @@ class Employer {
   }
 
   deliveries() {
-    return this.employees().map(function(employee) {
+    let results =  this.employees().map(function(employee) {
       return employee.deliveries()
     })
   }
