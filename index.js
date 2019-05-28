@@ -76,6 +76,14 @@ class Employer {
     })
     return results[0]
   }
+
+  meals () {
+    let results
+    results =  this.employees().map(function(employee) {
+      return employee.meals()
+    })
+    return results[0]
+  }
 }
 
 class Customer {
