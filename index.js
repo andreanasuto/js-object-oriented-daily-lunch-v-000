@@ -94,7 +94,6 @@ class Employer {
     meals.forEach(function(meal) { counts[meal.id] = (counts[meal.id] || 0)+1; })
     return counts
   }
-  }
 }
 
 class Customer {
