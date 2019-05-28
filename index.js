@@ -91,6 +91,7 @@ class Employer {
       return delivery.meal()
     })
     let counts = {}
+    debugger
     meals.forEach(function(meal) { counts[meal.id] = (counts[meal.id] || 0)+1; })
     return counts
   }
