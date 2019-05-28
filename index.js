@@ -74,7 +74,7 @@ class Employer {
     results =  this.employees().map(function(employee) {
       return employee.deliveries()
     })
-    return results
+    return results[0]
   }
 }
 
