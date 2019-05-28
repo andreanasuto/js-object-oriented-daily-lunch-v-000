@@ -116,7 +116,10 @@ class Customer {
   totalSpent () {
     let total = 0
     let meals = this.meals()
-    for (let i = 0; i < meals.length; i++) {
+    filtered = meals.filter(function(e) {
+      return e != undefined
+    })
+    for (let i = 0; i < filtered.length; i++) {
       debugger
       total += meals[i].price
     }
