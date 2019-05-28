@@ -83,7 +83,7 @@ class Employer {
       return employee.meals()
     })
     let uniq_meals = Array.from(new Set(meals))
-    return
+    return uniq_meals
   }
 }
 
