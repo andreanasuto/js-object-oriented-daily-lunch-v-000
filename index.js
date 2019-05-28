@@ -91,7 +91,7 @@ class Employer {
       return delivery.meal()
     })
     let counts = {}
-    meals.forEach(function(meal) { counts[meal.id] = (counts[meal.id] || 0)+2; })
+    meals.forEach(function(meal) { counts[meal.id] = (counts[meal.id] || 0)+1; })
     return counts
   }
 }
