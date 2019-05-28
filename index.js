@@ -121,7 +121,7 @@ class Customer {
     })
     for (let i = 0; i < filtered.length; i++) {
       debugger
-      total += meals[i].price
+      total += filtered[i].price
     }
     return total
   }
