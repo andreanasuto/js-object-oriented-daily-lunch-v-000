@@ -87,8 +87,14 @@ class Employer {
   }
 
   mealTotals() {
-    debugger
-    return this.meals()
+    const meals = this.deliveries().map(function (delivery) {
+      return delivery.meal()
+    })
+    let counts = {}
+    meals.forEach(function(meal) { counts[meal.id] = (counts[meal.id] || 0)+1; })
+    return counts
+  }
+
   }
 }
 
