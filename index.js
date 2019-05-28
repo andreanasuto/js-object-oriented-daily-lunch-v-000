@@ -87,7 +87,7 @@ class Employer {
   }
 
   mealTotals() {
-
+    return this.meals()
   }
 }
 
