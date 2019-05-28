@@ -117,6 +117,7 @@ class Customer {
     let total = 0
     let meals = this.meals()
     for (let i = 0; i < meals.length; i++) {
+      debugger
       total += meals[i].price
     }
     return total
